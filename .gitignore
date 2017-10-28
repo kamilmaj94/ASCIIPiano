@@ -1,0 +1,9 @@
+ASCIIPiano.xcode
+build
+Debug
+Release
+ASCIIPiano.1
+*.sdf
+*.opensdf
+*.suo
+.vs
