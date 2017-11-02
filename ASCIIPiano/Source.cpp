@@ -1,3 +1,4 @@
+#include <Windows.h>
 #include <iostream>
 #include <stdlib.h>
 #include <stdio.h>
@@ -10,7 +11,7 @@ void dispKeyboard(char Wc, char Bc, char Wd, char Bd, char We, char Wf, char Bf,
 		system("cls");
 		for (int i = 0; i < 6; i++) { printf("%c", 205); }
 		printf("%c", 185);
-		printf("YAMAHA%c",2);
+		printf("CYCKI%c",2);
 		printf("%c", 204);
 		for (int i = 0; i < 6; i++) { printf("%c", 205); }
 		printf("\n");
@@ -58,10 +59,9 @@ int main()
 		Bg = 32; //black
 		Ba = 32; //black
 		p = 177; //pressed
-		
+
 		char c;
-		
-		
+
 		c = getch();
 		switch (c)
 		{
@@ -87,7 +87,7 @@ int main()
 			break;
 		case 'v':
 			Wf = p;
-			Beep(437 * choice,     time += pedal); //F	
+			Beep(437 * choice,     time += pedal); //F
 			break;
 		case 'g':
 			Bf = p;
@@ -140,8 +140,6 @@ int main()
 			break;
 		}
 		dispKeyboard(Wc, Bc, Wd, Bd, We, Wf, Bf, Wg, Bg, Wa, Ba, Wb, Wx);
-		
-		
 	}
 	return 0;
 }
